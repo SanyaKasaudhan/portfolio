@@ -1,5 +1,9 @@
 import React from 'react'
 import "./Intro.css";
+import glassesimoji from "../../img/glassesimoji.png"
+import thumbup from "../../img/thumbup.png";
+import crown from "../../img/crown.png";
+import FloatinDiv from '../FloatingDiv/FloatingDiv';
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
 import girl from "../../img/girl.png";
@@ -34,7 +38,8 @@ const Intro = () => {
     <div className="i-right">
       <img src={Vector1} alt="" />
       <img src={Vector2} alt="" />
-      <img style={{marginLeft:"-50%", marginTop:"-70%"}} src={girl} alt="" />
+      <img src={girl} alt="" />
+      <img src={glassesimoji} alt="" />
       {/* animation */}
       {/* <motion.img
         initial={{ left: "-36%" }}
@@ -49,9 +54,11 @@ const Intro = () => {
         whileInView={{ left: "68%" }}
         transition={transition}
         className="floating-div"
-      >
+      > */}
+      <div style={{ top: "-15%", left: "64%" }} >
         <FloatinDiv img={crown} text1="Web" text2="Developer" />
-      </motion.div> */}
+      </div>
+      {/* </motion.div> */}
 
       {/* animation */}
       {/* <motion.div
@@ -61,8 +68,11 @@ const Intro = () => {
         className="floating-div"
       >
         {/* floatinDiv mein change hy dark mode ka */}
-        {/* <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
-      </motion.div> */}
+        <div style={{ left: "-9rem", top: "12rem" }}>
+        <FloatinDiv img={thumbup}  text1="Designer" text2="Freak" />
+        </div>
+        
+      {/* </motion.div> */}
 
       <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
       <div

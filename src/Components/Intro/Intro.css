@@ -31,10 +31,12 @@
     font-weight: 100;
     font-size: 14px;
     color: var(--gray);
-    margin-top: 10px;
   }
   .i-button {
-    width: 6rem;
+    padding-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
     height: 2rem;
   }
   .i-icons {
@@ -68,8 +70,9 @@
     left: -3rem;
   }
   .i-right > :nth-child(3) {
+    margin-top: -70%;
     transform: scale(1.4);
-    left: 28%;
+    left: -25%;
   }
   .i-right > :nth-child(4) {
     transform: scale(0.62);
